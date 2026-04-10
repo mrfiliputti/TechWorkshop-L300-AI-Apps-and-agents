@@ -24,7 +24,7 @@ jobs:
       - name: Deploy customer-loyalty agent to Foundry
         env:
           FOUNDRY_ENDPOINT: ${{ secrets.FOUNDRY_ENDPOINT }}
-          GPT_DEPLOYMENT: ${{ secrets.GPT_DEPLOYMENT }}
+          GPT_DEPLOYMENT: ${{ secrets.GPT_ENDPOINT }}
         run: |
           # Read the prompt file and escape it for JSON
           INSTRUCTIONS=$(python3 -c "
